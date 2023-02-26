@@ -8,7 +8,45 @@
     <title>HTML Academy: Device</title>
   </head>
   <body>
-
-
+    <header class="main-header">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="Логотип сайта device" width="145" height="36">
+      </a>
+      <form class="main-form" action="#" method="post">
+        <input type="text" name="search" placeholder="Текст поиска">
+        <a href="#">Найти</a>
+      </form>
+      <ul class="user-menu">
+        <li class="user-menu__item login-enter">
+          <button class="user-menu__button login-enter__button" type="button">Войти</button>
+        </li>
+        <li class="user-menu__item login-exit">
+          <button class="user-menu__button login-exit__button" type="button">Выйти</button>
+        </li>
+        <li class="user-menu__item compare">
+          <button class="user-menu__button compare__button" type="button">Сравнить</button>
+        </li>
+        <li class="user-menu__item cart">
+          <button class="user-menu__button cart__button" type="button">Корзина</button>
+        </li>
+      </ul>
+      <div class="main-header__toggler">
+        <div class="main-header__toggler-title">Каталог товаров</div>
+        <button class="main-header__toggler-button" type="button">
+          <span class="visually-hidden">Кнопка для открытия списка каталога товаров</span>
+        </button>
+      </div>
+      <ul class="nav">
+        <li class="nav__item">
+          Доставка
+        </li>
+        <li class="nav__item">
+          Гарантия
+        </li>
+        <li class="nav__item">
+          Контакты
+        </li>
+      </ul>
+    </header>
   </body>
 </html>
