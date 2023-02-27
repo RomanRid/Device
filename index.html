@@ -9,44 +9,98 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo" href="#">
+      <a class="logo" current>
         <img class="logo__img" src="images/logo.svg" alt="Логотип сайта device" width="145" height="36">
       </a>
-      <form class="main-form" action="#" method="post">
-        <input type="text" name="search" placeholder="Текст поиска">
-        <a href="#">Найти</a>
-      </form>
-      <ul class="user-menu">
-        <li class="user-menu__item login-enter">
-          <button class="user-menu__button login-enter__button" type="button">Войти</button>
-        </li>
-        <li class="user-menu__item login-exit">
-          <button class="user-menu__button login-exit__button" type="button">Выйти</button>
-        </li>
-        <li class="user-menu__item compare">
-          <button class="user-menu__button compare__button" type="button">Сравнить</button>
-        </li>
-        <li class="user-menu__item cart">
-          <button class="user-menu__button cart__button" type="button">Корзина</button>
-        </li>
-      </ul>
-      <div class="main-header__toggler">
-        <div class="main-header__toggler-title">Каталог товаров</div>
-        <button class="main-header__toggler-button" type="button">
-          <span class="visually-hidden">Кнопка для открытия списка каталога товаров</span>
-        </button>
+      <div class="main-header__content">
+        <div class="main-header__products">
+          <form class="main-form" action="#" method="post">
+            <input type="text" name="search" placeholder="Текст поиска">
+            <a href="#">Найти</a>
+          </form>
+          <div class="main-header__toggler">
+            <h2 class="main-header__toggler-title">Каталог товаров</h2>
+            <button class="main-header__toggler-button" type="button">
+              <span class="visually-hidden">Кнопка для открытия списка каталога товаров</span>
+            </button>
+          </div>
+        </div>
+        <div class="main-header__menu">
+          <ul class="user-menu">
+            <li class="user-menu__item login-enter">
+              <button class="user-menu__button login-enter__button" type="button">Войти</button>
+            </li>
+            <li class="user-menu__item login-exit">
+              <button class="user-menu__button login-exit__button" type="button">Выйти</button>
+            </li>
+            <li class="user-menu__item compare">
+              <button class="user-menu__button compare__button" type="button">Сравнить</button>
+            </li>
+            <li class="user-menu__item cart">
+              <button class="user-menu__button cart__button" type="button">Корзина</button>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li class="nav__item">
+              Доставка
+            </li>
+            <li class="nav__item">
+              Гарантия
+            </li>
+            <li class="nav__item">
+              Контакты
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="nav">
-        <li class="nav__item">
-          Доставка
-        </li>
-        <li class="nav__item">
-          Гарантия
-        </li>
-        <li class="nav__item">
-          Контакты
-        </li>
-      </ul>
     </header>
+    <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин Device</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Слайдер товаров</h2>
+        <div class="slider__photo">
+          <img class="slider__img" src="images/slider-1.png" alt="Изображение квадрокоптера" width="560" height="560">
+          <button class="slider__photo-button slider__photo-button--prew" type="button">
+            <span class="visually-hidden">Кнопка слайдера предыдущий товар</span>
+          </button>
+          <button class="slider__photo-button slider__photo-button--next" type="button">
+            <span class="visually-hidden">Кнопка слайдера следующий товар</span>
+          </button>
+        </div>
+        <div class="slider__desc">
+          <h3 class="slider__desc-title">Порхает как бабочка,жалит как пчела!</h3>
+          <p class="slider__desc-text">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a class="slider__desc-link" href="#">
+            Подробнее
+          </a>
+          <ul class="dots">
+            <li class="dots__item">
+              <button class="dots__item-button" type="button">
+                <span class="visually-hidden">Кнопка в виде точки для перелистывания слайдера</span>
+              </button>
+            </li>
+            <li class="dots__item">
+              <button class="dots__item-button" type="button">
+                <span class="visually-hidden">Кнопка в виде точки для перелистывания слайдера</span>
+              </button>
+            </li>
+            <li class="dots__item">
+              <button class="dots__item-button" type="button">
+                <span class="visually-hidden">Кнопка в виде точки для перелистывания слайдера</span>
+              </button>
+            </li>
+          </ul>
+          <dl class="specifications">
+            <dt>Дальность полета</dt>
+            <dd>800 м</dd>
+            <dt>Радиус поражения</dt>
+            <dd>50 м</dd>
+          </dl>
+      </div>
+      </section>
+    </main>
+
   </body>
 </html>
