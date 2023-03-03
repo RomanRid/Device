@@ -25,6 +25,9 @@
               <li class="login__item">
                 <button type="button">Войти</button>
               </li>
+              <li class="login__item">
+                <button type="button">Выйти</button>
+              </li>
             </ul>
             <ul class="users-info">
               <li class="users-info__item compare">
@@ -68,49 +71,49 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
-      <section class="slider">
-        <h2 class="visually-hidden">Слайдер товаров</h2>
-        <div class="slider__photo">
-          <img class="slider__img" src="images/slider-1.png" alt="Изображение квадрокоптера" width="560" height="560">
-          <button class="slider__photo-button slider__photo-button--prew" type="button">
-            <span class="visually-hidden">Кнопка слайдера предыдущий товар</span>
-          </button>
-          <button class="slider__photo-button slider__photo-button--next" type="button">
-            <span class="visually-hidden">Кнопка слайдера следующий товар</span>
-          </button>
-        </div>
-        <div class="slider__desc">
-          <h3 class="slider__desc-title">Порхает как бабочка,жалит как пчела!</h3>
-          <p class="slider__desc-text">
-            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <a class="slider__desc-link" href="#">
-            Подробнее
-          </a>
-          <ul class="dots">
-            <li class="dots__item">
-              <button class="dots__item-button" type="button">
-                <span class="visually-hidden">Кнопка в виде точки для перелистывания слайдера</span>
-              </button>
-            </li>
-            <li class="dots__item">
-              <button class="dots__item-button" type="button">
-                <span class="visually-hidden">Кнопка в виде точки для перелистывания слайдера</span>
-              </button>
-            </li>
-            <li class="dots__item">
-              <button class="dots__item-button" type="button">
-                <span class="visually-hidden">Кнопка в виде точки для перелистывания слайдера</span>
-              </button>
+      <section class="popular-products">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <div class="slider">
+          <ul class="slider__list slider-1">
+            <li class="slider__list-item">
+              <img src="images/slider-1.png" alt="Изображение квадрокоптера." width="560" height="560">
+              <div class="slider__desc">
+                <p class="slider__desc-slogan">Порхает как бабочка,жалит как пчела!</p>
+                <p class="slider__desc-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                  мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <button type="button">Подробнее</button>
+                <dl class="slider__parameters">
+                  <dt>Дальность полета</dt>
+                  <dd>800 м</dd>
+                  <dt>Радиус поражения</dt>
+                  <dd>50 м</dd>
+                </dl>
+              </div>
             </li>
           </ul>
-          <dl class="specifications">
-            <dt>Дальность полета</dt>
-            <dd>800 м</dd>
-            <dt>Радиус поражения</dt>
-            <dd>50 м</dd>
-          </dl>
-      </div>
+          <div class="slider__controls">
+            <div class="arrows">
+              <button class="arrows__button arrow-prew" type="button">
+                <span class="visually-hidden">Кнопка в виде стрелки для показа предыдущего слайдера.</span>
+              </button>
+              <button class="arrows__button arrow-next" type="button">
+                <span class="visually-hidden">Кнопка в виде стрелки для показа следующего слайдера.</span>
+              </button>
+            </div>
+            <ol class="dots">
+              <li class="dots__item">
+                <span class="visually-hidden">Копки переключения слайдера</span>
+              </li>
+              <li class="dots__item">
+                <span class="visually-hidden">Копки переключения слайдера</span>
+              </li>
+              <li class="dots__item">
+                <span class="visually-hidden">Копки переключения слайдера</span>
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
 
       <section class="categories">
