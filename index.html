@@ -9,51 +9,63 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo" current>
-        <img class="logo__img" src="images/logo.svg" alt="Логотип сайта device" width="145" height="36">
-      </a>
       <div class="main-header__content">
-        <div class="main-header__products">
-          <form class="main-form" action="#" method="post">
-            <input type="text" name="search" placeholder="Текст поиска">
-            <a href="#">Найти</a>
+        <div class="main-header__logo">
+          <img class="main-header__logo-img" src="images/logo.svg" alt="Логотип сайта." width="145" height="36">
+        </div>
+        <div class="users-block">
+          <form class="users-block__form" action="#" method="POST">
+            <input class="users-block__form-input" type="text" placeholder="Текст поиска">
+            <a href="#">
+              Найти
+            </a>
           </form>
-          <div class="main-header__toggler">
-            <h2 class="main-header__toggler-title">Каталог товаров</h2>
-            <button class="main-header__toggler-button" type="button">
-              <span class="visually-hidden">Кнопка для открытия списка каталога товаров</span>
-            </button>
+          <div class="users-menu">
+            <ul class="login">
+              <li class="login__item">
+                <button type="button">Войти</button>
+              </li>
+            </ul>
+            <ul class="users-info">
+              <li class="users-info__item compare">
+                <button class="users-info__button compare__button" type="button">Сравнить</button>
+              </li>
+              <li class="users-info__item cart">
+                <button class="users-info__button cart__button" type="button">Корзина</button>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="main-header__menu">
-          <ul class="user-menu">
-            <li class="user-menu__item login-enter">
-              <button class="user-menu__button login-enter__button" type="button">Войти</button>
-            </li>
-            <li class="user-menu__item login-exit">
-              <button class="user-menu__button login-exit__button" type="button">Выйти</button>
-            </li>
-            <li class="user-menu__item compare">
-              <button class="user-menu__button compare__button" type="button">Сравнить</button>
-            </li>
-            <li class="user-menu__item cart">
-              <button class="user-menu__button cart__button" type="button">Корзина</button>
-            </li>
-          </ul>
-          <ul class="nav">
-            <li class="nav__item">
-              Доставка
-            </li>
-            <li class="nav__item">
-              Гарантия
-            </li>
-            <li class="nav__item">
-              Контакты
-            </li>
-          </ul>
+        <div class="products-info">
+          <div class="catalog-toggler">
+            <p class="catalog-toggler__name">Каталог товаров</p>
+            <button class="catalog-toggler__button" type="button">
+              <span class="visually-hidden">Кнопка открытия списка каталога товаров</span>
+            </button>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#">
+                  Доставка
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#">
+                  Гарантия
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
+
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <section class="slider">
@@ -165,6 +177,21 @@
             </figure>
           </li>
         </ul>
+      </section>
+
+      <section class="delivery">
+        <h2 class="visually-hidden">Раздел доставки товара</h2>
+        <div class="delivery__content">
+          <nav class="delivery__nav">
+            <ul class="delivery__nav-list">
+              <li>
+                <a href="#">
+                  Доставка
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </section>
     </main>
 
