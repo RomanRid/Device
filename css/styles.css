@@ -1,1 +1,153 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway/raleway-800.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/rubik/rubik-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/rubik/rubik-400.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  border: 1px solid red;
+  max-width: 1160px;
+  margin: 0;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  background-color: #FFE17F;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.main-header__content {
+  border: 1px solid #000000;
+}
+
+.users-block {
+  border: 1px solid red;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.users-block__form {
+  width: 517px;
+  height: 40px;
+  display: flex;
+  background-image: url("../images/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+}
+
+.users-block__form-input {
+  width: 358px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-right: 1px solid #000000;
+  border-radius: 50px 0 0 50px;
+  padding-left: 46px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.users-block__form-input::placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.users-block__form-input:not(:placeholder-shown) {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.users-block__form-button {
+  width: 160px;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-left: 1px solid #000000;
+  border-radius: 0 50px 50px 0;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.users-menu {
+  display: flex;
+}
+
+.login {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.login__item-button {
+  width: 81px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: transparent;
+  background-image: url("../images/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  /* border: none; */
+  padding: 0;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.users-info {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
